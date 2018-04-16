@@ -20,7 +20,7 @@ public class InvalidLoginTest extends BaseTest{
 		lp.clickLoginBTN();
 		Thread.sleep(3000);
 		String eErrorMessage = lp.verifyErrorMessage();
-		String aErrorMessage="Username or Password is invalid. Please try again.";
+		String aErrorMessage="Username or Password is invalid. Please Please try again.";
 		
 		Assert.assertEquals(eErrorMessage, aErrorMessage);
 		
