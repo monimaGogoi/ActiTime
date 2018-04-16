@@ -1,0 +1,1 @@
+java -jar s.jar -role hub

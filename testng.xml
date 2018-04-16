@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="5" name="ChromeTest">
+  <parameter name="nodeurl" value="http://localhost:4444/wd/hub/"></parameter>
+  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="appurl" value="https://demo.actitime.com/login.do"></parameter>
+  <packages>
+  <package name="com.actitime.tests" />
+  </packages>
+  </test>
+ 
+  <test thread-count="5" name="FirefoxTest">
+  <parameter name="nodeurl" value="http://localhost:4444/wd/hub/"></parameter>
+  <parameter name="browser" value="firefox"></parameter>
+  <parameter name="appurl" value="https://demo.actitime.com/login.do"></parameter>
+  <packages>
+  <package name="com.actitime.tests" />
+  </packages>
+  </test>
+</suite>
